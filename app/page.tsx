@@ -1,0 +1,46 @@
+"use client";
+
+import Navbar from "../../../Downloads/BaseVersion-main/BaseVersion-main/components/NavBar";
+import Button from "../../../Downloads/BaseVersion-main/BaseVersion-main/components/Button";
+
+export default function Home() {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Main Content */}
+      <main
+        style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "60px 20px",
+          backgroundColor: "#7ebeab", // light green background
+          gap: "24px",
+        }}
+      >
+        <h1 style={{ fontSize: "48px", fontWeight: 700, color: "#134a33" }}>
+          GreenSlug — Surplus Food to Community
+        </h1>
+
+        <p style={{ fontSize: "20px", color: "#134a33", maxWidth: "600px" }}>
+          Connect farms with restaurants and nonprofits. Reduce waste. Feed communities.
+        </p>
+
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "16px" }}>
+          <Button text="I'm a Farmer" primary href="/farmer/dashboard" />
+          <Button text="I'm a Buyer" href="/consumer/dashboard" />
+          <Button text="I'm an NPO" href="/npo/dashboard" />
+          <Button text="Admin Dashboard" href="/admin/dashboard" />
+        </div>
+      </main>
+
+      {/* Footer removed */}
+    </div>
+  );
+}
