@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { createListing, updateListing } from "../../../../../Downloads/BaseVersion-main/BaseVersion-main/lib/api";
+import { createListing, updateListing } from "@/lib/api";
 
 export default function FarmerDashboard() {
   const [type, setType] = useState("");
