@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from "../../../Downloads/BaseVersion-main/BaseVersion-main/components/NavBar";
-import Button from "../../../Downloads/BaseVersion-main/BaseVersion-main/components/Button";
+import Navbar from "../components/NavBar";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
