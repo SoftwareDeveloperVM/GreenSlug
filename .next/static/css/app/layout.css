@@ -1,66 +1,64 @@
-/*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./styles/globals.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************/
-/* ===== TEST COLOR (RED) ===== */
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: red; /* YOU SHOULD SEE RED */
-  color: white;
-}
-
-/* ===== PALETTE VARIABLES ===== */
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
 :root {
-  --green-main: #349265;
-  --green-light: #7ebeab;
+  --green-primary: #349265;
+  --green-soft: #7ebeab;
   --green-dark: #136942;
   --green-muted: #9bae8c;
   --green-deep: #134a33;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
-/* ===== HOMEPAGE STYLES ===== */
-.hero {
-  min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    var(--green-main),
-    var(--green-deep)
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  background: var(--green-light);
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  max-width: 500px;
-  text-align: center;
-}
-
-.card h1 {
-  margin-bottom: 1rem;
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--green-soft);
   color: var(--green-deep);
 }
 
-.card p {
-  color: #083322;
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--green-deep);
+  margin: 0;
 }
 
-.button {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background: var(--green-dark);
-  border: none;
-  border-radius: 999px;
-  color: white;
-  font-size: 1rem;
+button {
+  font-family: var(--font-heading);
+  transition: all 0.2s ease-in-out;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--green-muted);
+  font-family: var(--font-body);
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+a, button {
   cursor: pointer;
 }
 
-.button:hover {
-  background: var(--green-deep);
+a:hover, button:hover {
+  opacity: 0.9;
 }
 

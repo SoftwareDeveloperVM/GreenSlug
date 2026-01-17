@@ -2,45 +2,40 @@
 
 import Navbar from "../components/NavBar";
 import Button from "../components/Button";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    const router = useRouter();
 
-      {/* Navbar */}
-      <Navbar />
+    return (
+        <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+            <Navbar />
 
-      {/* Main Content */}
-      <main
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "60px 20px",
-          backgroundColor: "#7ebeab", // light green background
-          gap: "24px",
-        }}
-      >
-        <h1 style={{ fontSize: "48px", fontWeight: 700, color: "#134a33" }}>
-          GreenSlug — Surplus Food to Community
-        </h1>
+            <main
+                style={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                    padding: "60px 20px",
+                    backgroundColor: "#7ebeab",
+                    gap: "24px",
+                }}
+            >
+                <h1 style={{ fontSize: "48px", fontWeight: 700, color: "#134a33" }}>
+                    GreenSlug — Surplus Food to Community
+                </h1>
 
-        <p style={{ fontSize: "20px", color: "#134a33", maxWidth: "600px" }}>
-          Connect farms with restaurants and nonprofits. Reduce waste. Feed communities.
-        </p>
+                <p style={{ fontSize: "20px", color: "#134a33", maxWidth: "600px" }}>
+                    Connect farms with restaurants and nonprofits. Reduce waste. Feed communities.
+                </p>
 
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "16px" }}>
-          <Button text="I'm a Farmer" primary href="/farmer/dashboard" />
-          <Button text="I'm a Buyer" href="/consumer/dashboard" />
-          <Button text="I'm an NPO" href="/npo/dashboard" />
-          <Button text="Admin Dashboard" href="/admin/dashboard" />
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
+                    <Button text="Get Started" primary onClick={() => router.push("/login")} />
+                </div>
+            </main>
         </div>
-      </main>
-
-      {/* Footer removed */}
-    </div>
-  );
+    );
 }
