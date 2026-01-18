@@ -47,9 +47,8 @@ export default function Home() {
                         lineHeight: 1.6,
                     }}
                 >
-                    Connecting farmers, businesses, and nonprofits to reduce food waste
-                    and sustainably feed communities — locally, transparently, and
-                    efficiently.
+                    Connecting farmers with local businesses and nonprofits with a mission
+                    to reduce food waste efficiently.
                 </p>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
@@ -79,19 +78,19 @@ export default function Home() {
                 >
                     <FeatureCard
                         title="For Farmers"
-                        text="List surplus produce, set flexible pricing, negotiate offers, and track sales in real time."
+                        text="List produce and set pricing in real time, while supporting nearby restaurants and kitchens."
                         icon="🌾"
                     />
 
                     <FeatureCard
                         title="For Businesses"
-                        text="Source fresh food in bulk, negotiate fair prices, and strengthen local supply chains."
+                        text="Source fresh food in bulk fro cheap prices, while supporting the Santa Cruz community"
                         icon="🏪"
                     />
 
                     <FeatureCard
                         title="For Nonprofits"
-                        text="Request discounted or donated food, coordinate drives, and maximize community impact."
+                        text="Request discounted food from local farms for donation programs and drives."
                         icon="❤️"
                     />
                 </div>
@@ -126,8 +125,8 @@ export default function Home() {
                         lineHeight: 1.6,
                     }}
                 >
-                    Whether you're growing food, selling it, or redistributing it —
-                    GreenSlug makes every connection seamless and impactful.
+                    Whether you're selling produce, buying it, or helping your community,
+                    GreenSlug makes it seamless and simple.
                 </p>
 
                 <div
