@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
-  "/farmer/dashboard/page": "app/farmer/dashboard/page.js",
-  "/api/produce/route": "app/api/produce/route.js"
+  "/consumer/dashboard/page": "app/consumer/dashboard/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/farmer/dashboard/page": "app/farmer/dashboard/page.js"
 }
